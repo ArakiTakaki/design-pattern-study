@@ -1,7 +1,13 @@
 class Singleton {
-  public main() {
-    console.log('single ton');
+  private members: Array<string> = [];
+
+  public addMember(member: string) {
+    this.members.push(member);
+  }
+
+  public getMembers(): Array<string> {
+    return this.members;
   }
 }
 
-export default Singleton;
+export default new Singleton();
