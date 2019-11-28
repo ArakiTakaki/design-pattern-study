@@ -1,6 +1,6 @@
 
 public class Singleton {
-  public static void main(String[] args) {
-    System.out.println("helo java");
+  Singleton() {
+    System.out.println("hello java");
   }
 }
